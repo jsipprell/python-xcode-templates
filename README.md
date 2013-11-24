@@ -5,6 +5,10 @@ It's been so long since I had my hands on the original Apple provided templates 
 how much of this came from Apple's templates and how much was (re-)created from scratch with no
 obvious references. Safe to say it is a mix of sorts.
 
+###XCode 5 Support Available###
+XCode 5 support is now available although not terribly well tested. Please checkout the _*xcode5*_ branch
+for a version of the templates that is compatible with XCode 5.
+
 ##Introduction##
 [PyObjc] is a development library that bridges the Objective-C object model on to the Python
 object model thus allowing Python classes to subclass NSObject (and ancestors of NSObject of course)
