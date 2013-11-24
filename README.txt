@@ -1,0 +1,1 @@
+Unzip into ~/Library/Developer/Xcode/Templates (make folder if it doesn't exist)

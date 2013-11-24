@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.objectiveCApplication</string>
+		<string>com.apple.dt.unit.macBase</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>___PACKAGENAME___-Info.plist:ApplicationCategory</key>
+		<string>&lt;key&gt;LSApplicationCategoryType&lt;/key&gt;
+&lt;string&gt;___VARIABLE_applicationCategory___&lt;/string&gt;
+</string>
+		<key>___PACKAGENAME___-Info.plist:Mac</key>
+		<string>&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;
+&lt;string&gt;1.0&lt;/string&gt;
+&lt;key&gt;LSMinimumSystemVersion&lt;/key&gt;
+&lt;string&gt;${MACOSX_DEPLOYMENT_TARGET}&lt;/string&gt;
+&lt;key&gt;CFBundleVersion&lt;/key&gt;
+&lt;string&gt;1&lt;/string&gt;
+&lt;key&gt;NSMainNibFile&lt;/key&gt;
+&lt;string&gt;MainMenu&lt;/string&gt;
+&lt;key&gt;NSPrincipalClass&lt;/key&gt;
+&lt;string&gt;NSApplication&lt;/string&gt;
+</string>
+		<key>en.lproj/MainMenu.xib</key>
+		<dict>
+			<key>Path</key>
+			<string>MainMenuApp.xib</string>
+		</dict>
+		<key>main.m:main:NSApplicationMain</key>
+		<string>return NSApplicationMain(argc, (const char **)argv);</string>
+	</dict>
+	<key>Identifier</key>
+	<string>net.militant-machine.cocoaApplication</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>main.m:main:NSApplicationMain</string>
+		<string>___PACKAGENAME___-Info.plist:Mac</string>
+		<string>___PACKAGENAME___-Info.plist:ApplicationCategory</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The category for your application in the Mac App Store.</string>
+			<key>Identifier</key>
+			<string>applicationCategory</string>
+			<key>Name</key>
+			<string>App Store Category</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Placeholder</key>
+			<string>None</string>
+			<key>SpecialType</key>
+			<string>LSApplicationCategoryType</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Units</key>
+			<dict>
+				<key></key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>___PACKAGENAME___-Info.plist:ApplicationCategory</key>
+							<string></string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Frameworks</key>
+			<array>
+				<string>Cocoa</string>
+			</array>
+			<key>OtherFrameworks</key>
+			<array>
+				<string>AppKit</string>
+				<string>CoreData</string>
+				<string>Foundation</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

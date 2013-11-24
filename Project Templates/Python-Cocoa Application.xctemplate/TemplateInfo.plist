@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>net.militant-machine.cocoaApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>___PROJECTNAMEASIDENTIFIER___AppDelegate.py</key>
+		<dict>
+			<key>Path</key>
+			<string>AppDelegate.py</string>
+		</dict>
+		<key>en.lproj/MainMenu.xib</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>AppMainMenu.xib</string>
+		</dict>
+		<key>main.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>main.m</string>
+		</dict>
+		<key>main.py</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>main.py</string>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>This template builds a Python Cocoa based application.</string>
+	<key>Identifier</key>
+	<string>net.militant-machine.PythonCocoaApplication</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>main.m</string>
+		<string>main.py</string>
+		<string>en.lproj/MainMenu.xib</string>
+		<string>___PROJECTNAMEASIDENTIFIER___AppDelegate.py</string>
+	</array>
+	<key>Options</key>
+	<array/>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Description</key>
+					<string>Compile python to bytecode</string>
+					<key>Class</key>
+					<string>ShellScript</string>
+					<key>RunOnlyForDeploymentPostprocessing</key>
+					<string>NO</string>
+					<key>ShellPath</key>
+					<string>/bin/sh</string>
+					<key>ShellScript</key>
+					<string>set -e; FIND_PY_FILES=&apos;find . -name &quot;*.py&quot; -not -path &quot;./packages/*&quot; -print0&apos;; if [ &quot;$ACTION&quot; = &quot;build&quot; ]; then cd &quot;$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH&quot;; eval &quot;$FIND_PY_FILES&quot; | xargs -0 python -m py_compile;  if [ &quot;$BUILD_STYLE&quot; = &quot;Release&quot; ]; then  eval &quot;$FIND_PY_FILES&quot; | xargs -0 python -O -O -m py_compile; fi; fi</string>
+				</dict>
+			</array>
+			<key>Frameworks</key>
+			<array>
+				<string>Python</string>
+			</array>
+			<key>SharedSettings</key>
+			<dict/>
+		</dict>
+	</array>
+</dict>
+</plist>
