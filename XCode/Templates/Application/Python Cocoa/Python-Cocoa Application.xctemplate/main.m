@@ -6,6 +6,7 @@
 //  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
+#import "___PROJECTNAMEASIDENTIFIER___-gc.h"
 #import <Python/Python.h>
 #import <Cocoa/Cocoa.h>
 #import <ApplicationServices/ApplicationServices.h>
@@ -42,8 +43,10 @@ static void setKeyFlags(void)
 
 int main(int argc, char *argv[])
 {
+#if !USING_ARC
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    
+#endif
+
     NSBundle *mainBundle = [NSBundle mainBundle];
     NSString *resourcePath = [mainBundle resourcePath];
     NSArray *pythonPathArray = [NSArray arrayWithObjects: resourcePath, [resourcePath stringByAppendingPathComponent:@"PyObjC"],
@@ -76,7 +79,9 @@ int main(int argc, char *argv[])
         [NSException raise: NSInternalInconsistencyException
                     format: @"%s:%d main() PyRun_SimpleFile failed with file '%@'.  See console for errors.", __FILE__, __LINE__, mainFilePath];
     
+#if !USING_ARC
     [pool drain];
+#endif
     
     return result;
 }

@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Project</key>
+	<dict>
+		<key>SDK</key>
+		<string>macosx10.8</string>
+		<key>SharedSettings</key>
+		<dict/>
+	</dict>
 	<key>Ancestors</key>
 	<array>
 		<string>com.apple.dt.unit.objectiveCApplication</string>
@@ -9,12 +16,21 @@
 	</array>
 	<key>Definitions</key>
 	<dict>
+		<key>en.lproj/Credits.rtf</key>
+		<dict>
+			<key>Path</key>
+			<string>Credits.rtf</string>
+			<key>Group</key>
+			<string>Supporting Files</string>
+		</dict>
 		<key>___PACKAGENAME___-Info.plist:ApplicationCategory</key>
 		<string>&lt;key&gt;LSApplicationCategoryType&lt;/key&gt;
 &lt;string&gt;___VARIABLE_applicationCategory___&lt;/string&gt;
 </string>
 		<key>___PACKAGENAME___-Info.plist:Mac</key>
-		<string>&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;
+		<string>&lt;key&gt;CFBundleIconFile&lt;/key&gt;
+&lt;string&gt;&lt;/string&gt;
+&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;
 &lt;string&gt;1.0&lt;/string&gt;
 &lt;key&gt;LSMinimumSystemVersion&lt;/key&gt;
 &lt;string&gt;${MACOSX_DEPLOYMENT_TARGET}&lt;/string&gt;
@@ -42,6 +58,8 @@
 		<string>main.m:main:NSApplicationMain</string>
 		<string>___PACKAGENAME___-Info.plist:Mac</string>
 		<string>___PACKAGENAME___-Info.plist:ApplicationCategory</string>
+		<string>___PACKAGENAME___-Info.plist:NSHumanReadableCopyright</string>
+		<string>en.lproj/Credits.rtf</string>
 	</array>
 	<key>Options</key>
 	<array>
@@ -78,16 +96,8 @@
 	<key>Targets</key>
 	<array>
 		<dict>
-			<key>Frameworks</key>
-			<array>
-				<string>Cocoa</string>
-			</array>
-			<key>OtherFrameworks</key>
-			<array>
-				<string>AppKit</string>
-				<string>CoreData</string>
-				<string>Foundation</string>
-			</array>
+			<key>SharedSettings</key>
+			<dict/>
 		</dict>
 	</array>
 </dict>

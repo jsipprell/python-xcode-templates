@@ -2,56 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Ancestors</key>
-	<array>
-		<string>net.militant-machine.cocoaApplication</string>
-	</array>
-	<key>Concrete</key>
-	<true/>
-	<key>Definitions</key>
-	<dict>
-		<key>___PROJECTNAMEASIDENTIFIER___AppDelegate.py</key>
-		<dict>
-			<key>Path</key>
-			<string>AppDelegate.py</string>
-		</dict>
-		<key>en.lproj/MainMenu.xib</key>
-		<dict>
-			<key>Group</key>
-			<string>Supporting Files</string>
-			<key>Path</key>
-			<string>AppMainMenu.xib</string>
-		</dict>
-		<key>main.m</key>
-		<dict>
-			<key>Group</key>
-			<string>Supporting Files</string>
-			<key>Path</key>
-			<string>main.m</string>
-		</dict>
-		<key>main.py</key>
-		<dict>
-			<key>Group</key>
-			<string>Supporting Files</string>
-			<key>Path</key>
-			<string>main.py</string>
-		</dict>
-	</dict>
-	<key>Description</key>
-	<string>This template builds a Python Cocoa based application.</string>
-	<key>Identifier</key>
-	<string>net.militant-machine.PythonCocoaApplication</string>
-	<key>Kind</key>
-	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
-	<key>Nodes</key>
-	<array>
-		<string>main.m</string>
-		<string>main.py</string>
-		<string>en.lproj/MainMenu.xib</string>
-		<string>___PROJECTNAMEASIDENTIFIER___AppDelegate.py</string>
-	</array>
-	<key>Options</key>
-	<array/>
 	<key>Targets</key>
 	<array>
 		<dict>
@@ -73,10 +23,90 @@
 			<key>Frameworks</key>
 			<array>
 				<string>Python</string>
+				<string>Cocoa</string>
+			</array>
+			<key>OtherFrameworks</key>
+			<array>
+				<string>AppKit</string>
+				<string>CoreData</string>
+				<string>Foundation</string>
 			</array>
 			<key>SharedSettings</key>
-			<dict/>
+			<dict>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>SDKROOT</key>
+				<string>macosx10.8</string>
+			</dict>
 		</dict>
 	</array>
+	<key>Options</key>
+	<array/>
+	<key>Nodes</key>
+	<array>
+		<string>main.m</string>
+		<string>main.py</string>
+		<string>Base.lproj/MainMenu.xib</string>
+		<string>___PROJECTNAMEASIDENTIFIER___AppDelegate.py</string>
+		<string>___PROJECTNAMEASIDENTIFIER___-gc.h</string>
+		<string>Images.xcassets</string>
+	</array>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Ancestors</key>
+	<array>
+		<string>net.militant-machine.cocoaApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>___PROJECTNAMEASIDENTIFIER___AppDelegate.py</key>
+		<dict>
+			<key>Path</key>
+			<string>AppDelegate.py</string>
+		</dict>
+		<key>___PROJECTNAMEASIDENTIFIER___-gc.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>gc.h</string>
+		</dict>
+		<key>Base.lproj/MainMenu.xib</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>AppMainMenu.xib</string>
+		</dict>
+		<key>main.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>main.m</string>
+		</dict>
+		<key>main.py</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>main.py</string>
+		</dict>
+		<key>Images.xcassets</key>
+		<dict>
+			<key>SortOrder</key>
+			<integer>100</integer>
+			<key>Path</key>
+			<string>Images.xcassets</string>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>This template builds a Python Cocoa based application.</string>
+	<key>Identifier</key>
+	<string>net.militant-machine.PythonCocoaApplication</string>
 </dict>
 </plist>
