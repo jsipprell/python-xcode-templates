@@ -19,7 +19,7 @@ Installation on XCode 5 is simple:
 
 1. Unzip into your __personal__ `Library/Developer` folder, creating `Developer` if it doesn't exist. _Unzipping into the system /Library folder is **not advised**_.
 
-2. Start XCode and create a new project. You should see a new section under "OS X" named _Python Cocoa_ and a new application type named _Python-Cocoa Application_ under this section. Click this, fill out the relevant info, and everything will be layed out including an empty application delegate python object with a method for `awakeFromNib`.
+2. Start XCode and create a new project. You should see a new section under "OS X" named _Python Cocoa_ and a new application type named _Python-Cocoa Application_ under this section. Click this, fill out the relevant info, and everything will be layed out including an empty application delegate python object with a method for `applicationDidFinishLaunching`.
 
 ###New Objects###
 A file template is also included which will establish a new python file representing a class which inherits NSObject (*by default*).
