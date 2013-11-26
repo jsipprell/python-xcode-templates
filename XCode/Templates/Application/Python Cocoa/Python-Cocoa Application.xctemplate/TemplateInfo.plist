@@ -8,7 +8,7 @@
 			<key>BuildPhases</key>
 			<array>
 				<dict>
-					<key>Description</key>
+					<key>Name</key>
 					<string>Compile python to bytecode</string>
 					<key>Class</key>
 					<string>ShellScript</string>
@@ -50,7 +50,8 @@
 		<string>main.py</string>
 		<string>Base.lproj/MainMenu.xib</string>
 		<string>___PROJECTNAMEASIDENTIFIER___AppDelegate.py</string>
-		<string>___PROJECTNAMEASIDENTIFIER___-gc.h</string>
+		<string>headers/</string>
+		<string>headers/___PROJECTNAMEASIDENTIFIER___-gc.h</string>
 		<string>Images.xcassets</string>
 	</array>
 	<key>Kind</key>
@@ -63,15 +64,25 @@
 	<true/>
 	<key>Definitions</key>
 	<dict>
+		<key>headers/</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>SortOrder</key>
+			<integer>101</integer>
+		</dict>
 		<key>___PROJECTNAMEASIDENTIFIER___AppDelegate.py</key>
 		<dict>
 			<key>Path</key>
 			<string>AppDelegate.py</string>
 		</dict>
-		<key>___PROJECTNAMEASIDENTIFIER___-gc.h</key>
+		<key>headers/___PROJECTNAMEASIDENTIFIER___-gc.h</key>
 		<dict>
-			<key>Group</key>
-			<string>Supporting Files</string>
+			<key>Groups</key>
+			<array>
+				<string>Supporting Files</string>
+				<string>headers</string>
+			</array>
 			<key>Path</key>
 			<string>gc.h</string>
 		</dict>
