@@ -5,6 +5,8 @@
 	<key>Targets</key>
 	<array>
 		<dict>
+			<key>ProductType</key>
+			<string>com.apple.product-type.application</string>
 			<key>BuildPhases</key>
 			<array>
 				<dict>
@@ -31,6 +33,19 @@
 				<string>CoreData</string>
 				<string>Foundation</string>
 			</array>
+			<key>Configurations</key>
+			<dict>
+				<key>Debug</key>
+				<dict>
+					<key>GCC_OPTIMIZATION_LEVEL</key>
+					<string>0</string>
+				</dict>
+				<key>Release</key>
+				<dict>
+					<key>GCC_OPTIMIZATION_LEVEL</key>
+					<string>2</string>
+				</dict>
+			</dict>
 			<key>SharedSettings</key>
 			<dict>
 				<key>COMBINE_HIDPI_IMAGES</key>
@@ -68,17 +83,14 @@
 		<dict>
 			<key>Group</key>
 			<string>Supporting Files</string>
-			<key>SortOrder</key>
-			<integer>101</integer>
-		</dict>
-		<key>___PROJECTNAMEASIDENTIFIER___AppDelegate.py</key>
-		<dict>
 			<key>Path</key>
-			<string>AppDelegate.py</string>
+			<string>headers</string>
+			<key>TargetIndices</key>
+			<array/>
 		</dict>
 		<key>headers/___PROJECTNAMEASIDENTIFIER___-gc.h</key>
 		<dict>
-			<key>Groups</key>
+			<key>Group</key>
 			<array>
 				<string>Supporting Files</string>
 				<string>headers</string>
@@ -86,10 +98,13 @@
 			<key>Path</key>
 			<string>gc.h</string>
 		</dict>
+		<key>___PROJECTNAMEASIDENTIFIER___AppDelegate.py</key>
+		<dict>
+			<key>Path</key>
+			<string>AppDelegate.py</string>
+		</dict>
 		<key>Base.lproj/MainMenu.xib</key>
 		<dict>
-			<key>Group</key>
-			<string>Supporting Files</string>
 			<key>Path</key>
 			<string>AppMainMenu.xib</string>
 		</dict>
@@ -109,8 +124,6 @@
 		</dict>
 		<key>Images.xcassets</key>
 		<dict>
-			<key>SortOrder</key>
-			<integer>100</integer>
 			<key>Path</key>
 			<string>Images.xcassets</string>
 		</dict>
