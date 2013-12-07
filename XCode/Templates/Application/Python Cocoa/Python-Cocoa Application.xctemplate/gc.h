@@ -12,7 +12,7 @@
 #define EMPTY_DEFINE (PREFIX_ONE(a) == 1)
 
 #if !defined(USING_GC)
-# if defined(__OBJ_C__)
+# if defined(__OBJ_C__) || defined(__OBJC__)
 #   define USING_GC 1
 # else
 #   define USING_GC 0
