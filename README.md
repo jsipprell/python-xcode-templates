@@ -13,6 +13,7 @@ The templates have been updated to work with XCode 5 with one major caveat:
     thus the glue code cannot be compiled. This will be examined in more detail once I have the opportunity to work
     with 10.9 more fully, but for now the template will force the SDK to `macos10.8` and `MACOSX_DEPLOYMENT_TARGET`
     to 10.8. Versions older than 10.8, obviously, are not supported by this branch (XCode 5 requires at least 10.8).
+    _(**Additional Note:** See README-embedding.md for one workaround regarding this issue.)_
 
 ##Installation##
 Installation on XCode 5 is simple:
